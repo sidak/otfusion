@@ -8,7 +8,7 @@ pip install POT
 
 Other than that, we also need PyTorch v1 or higher and NumPy. (Also, Python 3.6 +)
 
-Before running, unzip the respective pretrained model zip file as well as the cifar zip file.
+Before running, unzip the respective pretrained model zip file. Also, **you need to unzip** the `cifar.zip` file for some imports to work.
 
 ### Sample commands of one-shot model fusion
 
@@ -43,5 +43,4 @@ python main.py --gpu-id 1 --model-name resnet18_nobias_nobn --n-epochs 300 --sav
 --handle-skips
 ```
 
-The code and pretrained models correspond to the ICML 2020 submission: 
-`Model Fusion via Optimal Transport`. If you use any of the code or pretrained models for your research, please consider citing the paper. 
+The code and pretrained models correspond to the paper: `Model Fusion via Optimal Transport`. If you use any of the code or pretrained models for your research, please consider citing the paper. 
