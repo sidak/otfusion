@@ -1,3 +1,6 @@
+# Model Fusion via Optimal Transport 
+![Model Fusion](https://github.com/sidak/otfusion/blob/master/fusion_camera_ready.png)
+
 ### Requirements 
 
 Install the Python Optimal Transport Library
