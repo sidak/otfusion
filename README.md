@@ -46,4 +46,14 @@ python main.py --gpu-id 1 --model-name resnet18_nobias_nobn --n-epochs 300 --sav
 --handle-skips
 ```
 
-The code and pretrained models correspond to the paper: `Model Fusion via Optimal Transport`. If you use any of the code or pretrained models for your research, please consider citing the paper. 
+The code and pretrained models correspond to the paper: `Model Fusion via Optimal Transport`. If you use any of the code or pretrained models for your research, please consider citing the paper as.
+
+```
+@article{singh2020model,
+  title={Model fusion via optimal transport},
+  author={Singh, Sidak Pal and Jaggi, Martin},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
+  year={2020}
+}
+```
