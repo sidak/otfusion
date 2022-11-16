@@ -35,6 +35,16 @@ python main.py --gpu-id 1 --model-name vgg11_nobias --n-epochs 300 --save-result
 --prelu-acts --past-correction --not-squared --normalize-wts --exact
 ```
 
+We also recommend that users play around with some of options or hyper-parameters above, as the commands listed here are not highly tuned. For instance, getting rid of the `--normalize-wts` flag and running the below command instead, results in a test accuracy of `86.51%` instead of `85.98%` on CIFAR10. 
+
+```
+python main.py --gpu-id 1 --model-name vgg11_nobias --n-epochs 300 --save-result-file sample.csv \
+--sweep-name exp_sample --correction --ground-metric euclidean --weight-stats \
+--geom-ensemble-type wts --ground-metric-normalize none --sweep-id 90 --load-models ./cifar_models/ \
+--ckpt-type best --dataset Cifar10 --ground-metric-eff --recheck-cifar --activation-seed 21 \
+--prelu-acts --past-correction --not-squared --exact
+```
+
 #### For CIFAR10 + ResNet18
 
 ```
